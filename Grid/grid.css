@@ -1,0 +1,58 @@
+.Parent{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    font-size: 30px;
+    gap: 10px;
+}
+
+.child{
+    background-color: aqua;
+     font-size: 70%;
+    
+}
+
+@media (max-width:400px){
+    .Parent{
+        grid-template-columns: 1fr;
+    }
+    .child{
+        font-size:50%;
+    }
+
+}
+
+@media (min-width:401px) and (max-width:768px){
+    .Parent{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .child{
+        font-size: 55%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .Parent{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .child{
+        font-size: 60%;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1441px){
+    .Parent{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .child{
+        font-size: 65%;
+    }
+}
+
+@media (min-width:1441px) and (max-width:2560px){
+    .Parent{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .child{
+        font-size: 70%;
+    }
+}
