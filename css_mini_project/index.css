@@ -17,10 +17,11 @@
     align-items: center;
     padding: 5px;
     justify-content: space-between;
-    /* position:sticky;
+    position:sticky;
     width:100%;
-    top:0px; */
+    top:0px;
     background-color: #ebe6dd;
+    z-index: 1;
 
 
 }
@@ -194,6 +195,7 @@
     text-align: center;
     margin-top: 30px;
     position: relative;
+    z-index: 0;
 }
 
 .recipe_category{
@@ -213,6 +215,7 @@
     margin-top: 20px;
     column-gap: 40px;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -224,15 +227,25 @@
     width: 350px;
     height:530px;
     /* border: red solid 2px; */
-    position:relative;
+    position: relative;
     transition: 0.5s ease;
 }
 
+/* .category1{
+    background-image: url("https://d2rluq6rcpndy0.cloudfront.net/img/spring-salmon.jpeg");
+    object-fit: cover;
+}
+.category2{
+    background-image: url("https://d2rluq6rcpndy0.cloudfront.net/img/double-chocolate-cookie.jpeg");
+}
+
+.categoty3{
+    background-image: url("https://d2rluq6rcpndy0.cloudfront.net/img/aubergine-beans.jpeg");
+} */
 .category1 > img,.category2 > img,.category3 > img{
     width:100%;
     height:100%;
 }
-
 .category1 > p,.category2 > p,.category3 > p{
     display: flex;
     align-items: center;
@@ -248,11 +261,11 @@
     text-transform: uppercase;
     border-radius: 8px;
 
-}
+} 
 
 .Popular{
     display: flex;
-    margin-top: 100px;
+    margin-top: 70px;
     flex-direction: column;
 }
 
@@ -369,7 +382,8 @@
     width:32%;
     height:13.5%;
     color:white;
-    border-radius: 8px;
+    border-radius: 6px;
+    text-decoration: none;
     
 }
 .footer{
@@ -408,7 +422,7 @@
     color:black;
 }
 
-.footer_center a:hover{
+.footer_center > a:hover{
     text-decoration: underline;
     color:var(--text_color_banner);
 
